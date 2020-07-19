@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "sourceMap": true,
+        "module": "CommonJS",
+        "jsx": "react",
+        "esModuleInterop": true,
+        "target": "ES3",
+        "lib": [
+            "DOM",
+            "es2015"
+        ],
+    },
+    "include": [
+        "src",
+    ]
+}
