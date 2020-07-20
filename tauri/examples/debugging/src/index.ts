@@ -7,6 +7,12 @@ function onready() : void {
     clickButton.addEventListener('click', (ev: MouseEvent) => {
         totalClicks += 1;
         clickCountDiv.innerHTML = totalClicks.toString();
+
+        let w = window as any;
+        w.__TAURI_INVOKE_HANDLER__({
+            cmd: "myCustomCommand",
+            argument: "this long text hello"
+        });
     });
 }
 

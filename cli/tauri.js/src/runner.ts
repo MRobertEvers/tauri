@@ -171,7 +171,7 @@ class Runner {
     process.env.TAURI_INLINED_ASSETS = inlinedAssets.join('|')
 
     this.devPath = devPath
-
+    console.log(JSON.stringify(process.env));
     const startDevTauri = async (): Promise<void> => {
       return await this.__runCargoCommand({
         cargoArgs: ['run'],

@@ -75,3 +75,7 @@ notification = [ "tauri-api/notification" ]
 [[example]]
 name = "communication"
 path = "examples/communication/src-tauri/src/main.rs"
+
+[[example]]
+name = "debug"
+path = "examples/debugging/src-tauri/src/main.rs"
